@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to JS - Primitive and Reference Types</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="continer-fluid">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<h1>Intro to JS - Primitive and Reference Types</h1>
+		<hr>
+		<h3><a href="http://repl.it">Repl.it</a></h3>
+
+		<table class="table table-striped">
+			<tr>
+				<th>Primitives</th>
+				<th>Example 1</th>
+				<th>Example 2</th>
+				<th>Example 3</th>
+				<th>Example 4</th>
+				<th>Example 5</th>
+			</tr>
+			<tr>
+				<td><b>string</b></td>
+				<td>"hello"</td>
+				<td>'hi'</td>
+				<td>"hey!"</td>
+				<td>"yo yo yo"</td>
+				<td>"234"</td>
+			</tr>
+			<tr>
+				<td><b>number</b></td>
+				<td>1</td>
+				<td>40</td>
+				<td>20.1</td>
+				<td>-5</td>
+				<td>0.123</td>
+			</tr>
+			<tr>
+				<td><b>boolean</b></td>
+				<td>true</td>
+				<td>false</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>null</b></td>
+				<td>(an empty value)</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>undefined</b></td>
+				<td>(no assigned value)</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+<!-- 			<tr>
+				<td><b>symbol</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+ -->	</table>
+
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<th>Comparison Operators</th>
+				<th></th>
+				<th>Example 1</th>
+				<th>Example 2</th>
+			</tr>
+			<tr>
+				<td>==</td>
+				<td>equality</td>
+				<td>1==1 //true</td>
+				<td>'1'==1 //true</td>
+			</tr>
+			<tr>
+				<td>===</td>
+				<td>strict equality</td>
+				<td>2===2 //true</td>
+				<td>2==='2' //false</td>
+			</tr>
+			<tr>
+				<td>!==</td>
+				<td>inequality</td>
+				<td>1!=1 //false</td>
+				<td>1!=2 //true</td>
+			</tr>
+			<tr>
+				<td>&gt;</td>
+				<td>greater than</td>
+				<td>2&gt;1 //true</td>
+				<td>2&gt;5 //false</td>
+			</tr>
+			<tr>
+				<td>&gt;=</td>
+				<td>greater than or equal</td>
+				<td>2&gt;=2 //true</td>
+				<td>2&gt;=5 //false</td>
+			</tr>
+			<tr>
+				<td>&lt;</td>
+				<td>less than</td>
+				<td>4&lt;6 //true</td>
+				<td>4&lt;3 //false</td>
+			</tr>
+			<tr>
+				<td>&lt;=</td>
+				<td>less than or equal</td>
+				<td>4&lt;=4 //true</td>
+				<td>4&lt;50 //false</td>
+			</tr>
+		</table>
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<th>Logical Operators</th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td>expr1 && expr2</td>
+				<td>AND</td>
+				<td>returns expr1 if it can be converted to false, else returns expr2</td>
+				<td>thus, returns true if both are true</td>
+				<td>true && true //true
+			</tr>
+			<tr>
+				<td>expr1 || expr2</td>
+				<td>OR</td>
+				<td>returns expr1 if it can be converted to true, else returns expr2</td>
+				<td>thus, returns true if either is true and false if noth are false</td>
+				<td>false || true //true</td>
+			</tr>
+			<tr>
+				<td>!expr</td>
+				<td>NOT</td>
+				<td>returns false if expr can be converted to true, else true</td>
+				<td></td>
+				<td>!true //false</td>
+			</tr>
+		</table>
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<th> Variable naming</th>
+				<th>Example 1</th>
+				<th>Example 2</th>
+				<th>Example 3</th>
+			</tr>
+			<tr>
+				<td>Valid</td>
+				<td>one</td>
+				<td>firstName</td>
+				<td>NewValue_004</td>
+			</tr>
+			<tr>
+				<td>Invalid</td>
+				<td>3rdName</td>
+				<td>last name</td>
+				<td>boolean</td>
+			</tr>
+		</table>
+		<h2>if control structure</h2>
+		<code>if (condition) {code to execute if condition is true}</code>
+		<h2>if else control structure</h2>
+		<code>if (condition) {code to execute if condition is true} else {code to execute if condition is false}</code>
+		<h2>else if control structure</h2>
+		<code>if (condition1) {code to execute if condition1 is true} else if (condition2) {code to execute if condition1 is false and condition2 is true} else {code to execute if both conditions are false}</code>
+		<h2>for control structure</h2>
+		<code>for (execute before the loop; condition for the loop; execute after the loop) {loop code to execute}</code>
+		<h2>while control structure</h2>
+		<code>while (condition for loop) {loop code to execute}</code>
+
+
+		<p>Bonus -- Make a table that lists out String and Number methods, with explanations of each method, and examples.</p>
+	</div>
+</div>
+</body>
+</html>
